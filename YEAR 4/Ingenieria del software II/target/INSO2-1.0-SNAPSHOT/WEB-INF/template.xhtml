@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet library="css" name="default.css"/>
+        <h:outputStylesheet library="css" name="cssLayout.css"/>
+
+        <title>MISTER ULE</title>
+        <f:event type="preRenderView" listener="#{plantillaController.verificarYMostrar()}"/>
+    </h:head>
+
+    <h:body>
+
+       <div class="top">
+            <h:form id="tablaSuperior">
+                <p:growl id="messages"/>
+                <p:menubar id="bar" style="background: #062A50; width: 100%; text-align: center; background-repeat: no-repeat; background-attachment: fixed">
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/alaves-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/cadiz-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/elche-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/athletic-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/betis-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/celta-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/granada-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/madrid-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/valencia-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/villareal-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+
+
+
+                    <p:divider layout="vertical"/>
+
+                    <p:menuitem value="  MISTER ULE  " style="font-family: fantasy ; font-weight: 500 ; width: 125px ; text-align: center"/>
+
+                    <p:divider layout="vertical"/>
+
+
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/real-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/sevilla-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/osasuna-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/mallorca-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/rayo-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/getafe-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/barsa-logo.png" library="imagenes" class="imagenes"  />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/atleti-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/levante-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+                    <p:menuitem >
+                        <h:graphicImage name="escudosEquipos/espanyol-logo.png" library="imagenes" class="imagenes" />
+                    </p:menuitem>
+
+
+                </p:menubar>
+            </h:form>
+        </div>
+
+         <div>
+            <div id="left">
+                <ui:insert name="left"></ui:insert>
+            </div>
+             <div id="content" class="center_content">
+            <ui:insert name="content">Content</ui:insert>
+        </div>
+        </div>
+        
+        
+
+
+    </h:body>
+
+</html>

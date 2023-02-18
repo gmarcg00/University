@@ -1,0 +1,3 @@
+Para compilar el programa primero lo hicimos en QT con build-release para que creara la aplicacion.
+Al ejecutar la aplicacion por primera vez nos saltaban varios errores,pero con la ayuda del video facilitado en el agora,los resolvimos y se ejecuta el programa sin ningun problema.
+Para ejecutar el programa sirve con abrir la carpeta,dirigirse a la carpeta Ejecutable y ahi ejecutar la aplicacion Banco de pruebas.

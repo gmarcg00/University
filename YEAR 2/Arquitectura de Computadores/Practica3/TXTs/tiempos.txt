@@ -1,0 +1,7 @@
+Primer tiempo: 0
+Segundo tiempo :0
+Tercer tiempo: 0
+Cuarto tiempo :1
+Quinto tiempo: 0
+Media: 0.2
+

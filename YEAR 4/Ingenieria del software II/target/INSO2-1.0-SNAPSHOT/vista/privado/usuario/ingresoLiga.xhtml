@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition 
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+    template="./../../../WEB-INF/template.xhtml"
+    xmlns:p="http://primefaces.org/ui"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <ui:define name="MisterULE">
+        MisterULE
+    </ui:define>
+
+    <ui:define name="content">
+    </ui:define>
+
+    <ui:define name="content">
+        <div id="tablaPrincipal" align="center" >
+            <p:panelGrid id="panelPrincipal" columns="2" styleClass="showcase-text-align-center">
+                <h:outputText class="titulo" value="Ingresar en una liga"/>
+                <h:outputText class="titulo" value="Crear"/>
+                <p:column >
+                    <h:form>
+                        <p:inputText class="input" placeholder="Nombre de la liga" value="#{controladorIngresoLiga.ligComparacion.nombre}"/>
+                        <br/>
+                        <br/>
+                        <p:password class="input" placeholder="Contraseña de la liga" value="#{controladorIngresoLiga.ligComparacion.contraseña}"/>
+                        <br/>
+                        <br/>
+                        <p:commandButton value="Ingresar" action="#{controladorIngresoLiga.ingreso()}" update="@form"/>
+                        <p:growl id="growlliga1" showDetail="true" />
+                        <p:growl id="growl-stickyliga1" for="sticky-key" showDetail="true" sticky="true" />
+                    </h:form>
+                </p:column>
+                <p:column>
+                    <h:form>
+                        <p:inputText class="input" placeholder="Nombre de la liga" value="#{controladorIngresoLiga.lig.nombre}"/>
+                        <br/>                    
+                        <br/>
+                        <p:inputText class="input" placeholder="Contraseña" value="#{controladorIngresoLiga.lig.contraseña}"/>
+                        <br/>                    
+                        <br/>
+                        <p:commandButton value="Crear" action="#{controladorIngresoLiga.insertar()}" update="@form"/>
+                        <p:growl id="growlliga2" showDetail="true" />
+                        <p:growl id="growl-stickyliga2" for="sticky-key" showDetail="true" sticky="true" />
+                    </h:form>
+                </p:column>
+            </p:panelGrid>
+        </div>
+    </ui:define>
+
+</ui:composition>

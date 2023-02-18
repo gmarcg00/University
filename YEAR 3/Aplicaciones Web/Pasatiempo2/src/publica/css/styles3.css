@@ -1,0 +1,50 @@
+body{
+	font-family: 'Spicy Rice', cursive; 
+    background: #70e1f5;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ffd194, #70e1f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Spicy Rice', cursive;  
+}   
+
+.titulo{
+    text-align: left;
+    font-size: 200%;
+    font-weight: bold;
+    color:black;
+	font-family: 'Spicy Rice', cursive; 
+}
+
+.pistas{
+    font-weight: bold;
+}
+
+
+
+.table2{
+	display: none;
+}
+
+.texto{
+	margin-left: 5px;
+}
+
+#cajacookies {
+	box-shadow: 0px 0px 5px 5px #808080;
+	background-color: rgba(181, 238, 225, 0.925);
+    text-align: center;
+	color: black;
+	padding: 10px;
+	margin-left: -15px;
+	margin-right: -15px;
+	margin-bottom: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+  }
+
+
+
+
+
+
+

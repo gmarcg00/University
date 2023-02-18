@@ -1,0 +1,247 @@
+**: Hola
+[ 15/ 01/ 21 18: 46:] Enfermera_1: Es hora de atender a los pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_2: Es hora de atender a los pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_3: Es hora de atender a los pacientes
+
+[ 15/ 01/ 21 18: 46:`√ˇ] Solicitud del paciente_1: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_1: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_1: Enfermera 1 da la bienvenida a la enfermer√≠a al paciente_1
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_2: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_2: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_3: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_3: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_1: Fin de la atencion al paciente: 1 
+
+[ 15/ 01/ 21 18: 46:] Enfermera_2: Enfermera 2 da la bienvenida a la enfermer√≠a al paciente_2
+
+[ 15/ 01/ 21 18: 46:] Enfermera_3: Enfermera 3 da la bienvenida a la enfermer√≠a al paciente_3
+
+[ 15/ 01/ 21 18: 46:] Paciente_1: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 46:] Enfermera_2: Fin de la atencion al paciente: 2 
+
+[ 15/ 01/ 21 18: 46:] Enfermera_3: Fin de la atencion al paciente: 3 
+
+[ 15/ 01/ 21 18: 46:] Paciente_2: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 46:] Paciente_3: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_4: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_4: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_5: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_5: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_2: Enfermera 2 da la bienvenida a la enfermer√≠a al paciente_4
+
+[ 15/ 01/ 21 18: 46:] Enfermera_1: Enfermera 1 da la bienvenida a la enfermer√≠a al paciente_5
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_6: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_6: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_3: Enfermera 3 da la bienvenida a la enfermer√≠a al paciente_6
+
+[ 15/ 01/ 21 18: 46:] Enfermera_3: Fin de la atencion al paciente: 6 
+
+[ 15/ 01/ 21 18: 46:] Paciente_6: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 46:] Enfermera_2: Fin de la atencion al paciente: 4 
+
+[ 15/ 01/ 21 18: 46:] Enfermera_1: Fin de la atencion al paciente: 5 
+
+[ 15/ 01/ 21 18: 46:] Paciente_4: Voy a participar en el estudio serol√≥gico
+
+[ 15/ 01/ 21 18: 46:`√ˇ] Paciente_4: Me voy del estudio de serologia
+
+[ 15/ 01/ 21 18: 46:`√ˇ] Paciente_4: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 46:] Paciente_5: Voy a participar en el estudio serol√≥gico
+
+[ 15/ 01/ 21 18: 46:`√ˇ] Paciente_5: Me voy del estudio de serologia
+
+[ 15/ 01/ 21 18: 46:`√ˇ] Paciente_5: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_7: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_7: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_2: Enfermera 2 da la bienvenida a la enfermer√≠a al paciente_7
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_8: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_8: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_1: Enfermera 1 da la bienvenida a la enfermer√≠a al paciente_8
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_9: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_9: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_10: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_10: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_3: Enfermera 3 da la bienvenida a la enfermer√≠a al paciente_9
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_11: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_11: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_12: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_12: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_2: Fin de la atencion al paciente: 7 
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_13: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_13: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_14: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_14: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Paciente_7: Voy a participar en el estudio serol√≥gico
+
+[ 15/ 01/ 21 18: 46:`√ˇ] Paciente_7: Me voy del estudio de serologia
+
+[ 15/ 01/ 21 18: 46:`√ˇ] Paciente_7: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_15: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_15: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_2: Enfermera 2 da la bienvenida a la enfermer√≠a al paciente_15
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_16: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_16: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_17: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_17: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_18: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_18: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_1: Fin de la atencion al paciente: 8 
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_19: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_19: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_20: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_20: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Paciente_12: Me voy porque me lo he pensado mejor
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_21: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_8: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 46:] Paciente_21: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_1: Enfermera 1 da la bienvenida a la enfermer√≠a al paciente_10
+
+[ 15/ 01/ 21 18: 46:] Paciente_13: Me voy porque me lo he pensado mejor
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_22: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_22: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Paciente_14: Me voy porque me lo he pensado mejor
+
+[ 15/ 01/ 21 18: 46:] Solicitud del paciente_23: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 46:] Paciente_23: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 46:] Enfermera_2: Fin de la atencion al paciente: 15 
+
+[ 15/ 01/ 21 18: 46:] Enfermera_2: Enfermera 2 da la bienvenida a la enfermer√≠a al paciente_22
+
+[ 15/ 01/ 21 18: 46:] Enfermera_1: Fin de la atencion al paciente: 10 
+
+[ 15/ 01/ 21 18: 46:] Paciente_10: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 46:] Enfermera_1: Enfermera 1 da la bienvenida a la enfermer√≠a al paciente_11
+
+[ 15/ 01/ 21 18: 46:] Paciente_21: Me voy porque me he cansado de esperar
+
+[ 15/ 01/ 21 18: 46:] Enfermera_3: Fin de la atencion al paciente: 9 (paciente con catarro o gripe)
+
+[ 15/ 01/ 21 18: 46:] Enfermera_3: Fin de la atencion al paciente: 9 
+
+[ 15/ 01/ 21 18: 46:] Enfermera_2: Fin de la atencion al paciente: 22 
+
+[ 15/ 01/ 21 18: 46:] Enfermera_2: Ya he atendido a 5 pacientes, voy a tomar caf√©
+
+[ 15/ 01/ 21 18: 46:] Paciente_22: Voy a participar en el estudio serol√≥gico
+
+[ 15/ 01/ 21 18: 46:`√ˇ] Paciente_22: Me voy del estudio de serologia
+
+[ 15/ 01/ 21 18: 46:`√ˇ] Paciente_22: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 46:] Paciente_9: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 46:] Paciente_23: Me voy porque me he cansado de esperar
+
+[ 15/ 01/ 21 18: 47:] Enfermera_3: Enfermera 3 da la bienvenida a la enfermer√≠a al paciente_16
+
+[ 15/ 01/ 21 18: 47:] Paciente_17: Me voy porque he perdido el turno por ir al ba√±o
+
+[ 15/ 01/ 21 18: 47:] Enfermera_3: Fin de la atencion al paciente: 16 
+
+[ 15/ 01/ 21 18: 47:] Paciente_16: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 47:] Enfermera_3: Enfermera 3 da la bienvenida a la enfermer√≠a al paciente_18
+
+[ 15/ 01/ 21 18: 47:] Enfermera_2: Ya he vuelto de tomar caf√©
+
+[ 15/ 01/ 21 18: 47:] Enfermera_2: Enfermera 2 da la bienvenida a la enfermer√≠a al paciente_19
+
+[ 15/ 01/ 21 18: 47:] Enfermera_1: Fin de la atencion al paciente: 11 (paciente con catarro o gripe)
+
+[ 15/ 01/ 21 18: 47:] Enfermera_1: Fin de la atencion al paciente: 11 
+
+[ 15/ 01/ 21 18: 47:] Enfermera_2: Fin de la atencion al paciente: 19 
+
+[ 15/ 01/ 21 18: 47:] Paciente_11: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 47:] Enfermera_1: Enfermera 1 da la bienvenida a la enfermer√≠a al paciente_20
+
+[ 15/ 01/ 21 18: 47:] Enfermera_3: Fin de la atencion al paciente: 18 
+
+[ 15/ 01/ 21 18: 47:] Paciente_18: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 47:] Enfermera_1: Fin de la atencion al paciente: 20 
+
+[ 15/ 01/ 21 18: 47:] Paciente_20: Me voy del consultorio
+
+[ 15/ 01/ 21 18: 47:] Solicitud del paciente_24: Intentando acceder a cola
+
+[ 15/ 01/ 21 18: 47:] Paciente_24: Estoy en la cola de pacientes
+
+[ 15/ 01/ 21 18: 47:] Enfermera_3: Enfermera 3 da la bienvenida a la enfermer√≠a al paciente_24
+
+[ 15/ 01/ 21 18: 47:] Enfermera_3: Fin de la atencion al paciente: 24 
+
+[ 15/ 01/ 21 18: 47:] Paciente_24: Voy a participar en el estudio serol√≥gico
+
+[ 15/ 01/ 21 18: 47:`√ˇ] Paciente_24: Me voy del estudio de serologia
+
+[ 15/ 01/ 21 18: 47:`√ˇ] Paciente_24: Me voy del consultorio
+

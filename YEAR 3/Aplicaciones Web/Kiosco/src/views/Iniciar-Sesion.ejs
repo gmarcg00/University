@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('partials/heads.html') %>
+    <link rel="STYLESHEET" type="text/css" href="/css/Iniciar-Sesion.css">
+    <title>Iniciar Sesión</title>
+</head>
+<body>
+    <%- include ('partials/navigation.html') %>
+    <div class="container p-5">
+        <div class="row">
+          <div class="col-sm-4 offset-md-4">
+            <div class="card animated flipInY">
+              <div class="card-header bg-dark text-white text-center">
+                <h3>Iniciar Sesión</h3>
+              </div>
+              <div class="card-body">
+                <form action="/IniciarSesion" method="POST">
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Usuario" name="userName">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" type="password" name="password"  placeholder="Contraseña" name="password"></input>
+                  </div>
+                  <br>
+                    <button class="btn btn-primary btn-block" id="botonInicioSesion" style="margin-left: 120px;">
+                      Iniciar sesión
+                    </button>
+                </form>    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</body>
+<%- include ('partials/footer.html') %>
+</html>

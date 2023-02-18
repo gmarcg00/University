@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TextUI.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Coverage with Jacoco</a> &gt; <a href="index.source.html" class="el_package">es.unileon.prg1.candyClean</a> &gt; <span class="el_source">TextUI.java</span></div><h1>TextUI.java</h1><pre class="source lang-java linenums">package es.unileon.prg1.candyClean;
+
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
+/**
+ * @version1.0
+ * @author Guillermo Marcos Garcia, Javier Fernandez Tejerina
+ */
+
+public class TextUI {
+	
+<span class="nc" id="L13">	private static final Logger logger=LogManager.getLogger(TextUI.class);</span>
+
+	private CandyClean candyclean;
+
+<span class="nc" id="L17">	public TextUI(CandyClean candyclean) {</span>
+<span class="nc" id="L18">		logger.debug(&quot;Crea un objeto CandyClean&quot;);</span>
+<span class="nc" id="L19">		this.candyclean = candyclean;</span>
+<span class="nc" id="L20">	}</span>
+
+	public void start() {
+<span class="nc" id="L23">		int option = -1;</span>
+<span class="nc" id="L24">		boolean exit = false;</span>
+		do {
+<span class="nc" id="L26">			logger.trace(&quot;Entrando en un  do while&quot;);</span>
+			do {
+<span class="nc" id="L28">				logger.trace(&quot;Entrando en un  do while&quot;);</span>
+<span class="nc" id="L29">				System.out.println(&quot;-----------------------------&quot;);</span>
+<span class="nc" id="L30">				System.out.println(&quot;----------CandyClean----------&quot;);</span>
+<span class="nc" id="L31">				System.out.println(&quot;-----------------------------&quot;);</span>
+<span class="nc" id="L32">				System.out.println(&quot;Select an option:&quot;);</span>
+<span class="nc" id="L33">				System.out.println(&quot;1 - Play&quot;);</span>
+<span class="nc" id="L34">				System.out.println(&quot;2 - Exit&quot;);</span>
+<span class="nc" id="L35">				option = Teclado.readInteger();</span>
+<span class="nc bnc" id="L36" title="All 4 branches missed.">			} while (option != 1 &amp;&amp; option != 2);</span>
+			
+			try {
+<span class="nc bnc" id="L39" title="All 3 branches missed.">				switch (option) {</span>
+				case 1:
+<span class="nc" id="L41">					option1();</span>
+<span class="nc" id="L42">					exit = true;</span>
+					// El usuario ha seleccionado jugar
+<span class="nc" id="L44">					break;</span>
+				case 2:
+<span class="nc" id="L46">					exit = true;</span>
+<span class="nc" id="L47">					System.out.println(&quot;-----------BYE BYE-----------&quot;);</span>
+					break;
+				}
+<span class="nc" id="L50">			} catch (CandyCleanException e) {</span>
+				
+<span class="nc" id="L52">				System.out.println(e.getMessage());</span>
+				
+<span class="nc" id="L54">			}</span>
+
+<span class="nc bnc" id="L56" title="All 2 branches missed.">		} while (exit != true);</span>
+		
+<span class="nc" id="L58">	}</span>
+
+	public void option1() throws CandyCleanException {
+<span class="nc" id="L61">		logger.debug(&quot;Ejecuta la opcion de jugar&quot;);</span>
+<span class="nc bnc" id="L62" title="All 4 branches missed.">		while (candyclean.checkWin() == false &amp;&amp; candyclean.checkLoose() == false) {</span>
+<span class="nc" id="L63">			System.out.println(candyclean.toString());</span>
+<span class="nc" id="L64">			System.out.println(&quot;Introduce la fila&quot;);</span>
+<span class="nc" id="L65">			int row = Teclado.readInteger();</span>
+<span class="nc" id="L66">			System.out.println(&quot;Introduce la columna&quot;);</span>
+<span class="nc" id="L67">			int column = Teclado.readInteger();</span>
+<span class="nc bnc" id="L68" title="All 2 branches missed.">			if (candyclean.getBoard().removeBox(row, column)) {</span>
+<span class="nc" id="L69">				logger.trace(&quot;Entrando en un if&quot;);</span>
+<span class="nc" id="L70">				candyclean.getBoard().compact();</span>
+			} else {
+<span class="nc" id="L72">				System.out.println(&quot;That movement doesn't work&quot;);</span>
+			}
+<span class="nc" id="L74">			System.out.println();</span>
+<span class="nc" id="L75">		}</span>
+<span class="nc bnc" id="L76" title="All 2 branches missed.">		if (candyclean.checkWin() == true) {</span>
+<span class="nc" id="L77">			logger.trace(&quot;Entrando en un if&quot;);</span>
+<span class="nc" id="L78">			System.out.println(candyclean.toString());</span>
+<span class="nc" id="L79">			System.out.println(&quot;You won!&quot;);</span>
+		}
+<span class="nc bnc" id="L81" title="All 2 branches missed.">		if (candyclean.checkLoose() == true) {</span>
+<span class="nc" id="L82">			logger.trace(&quot;Entrando en un if&quot;);</span>
+<span class="nc" id="L83">			System.out.println(candyclean.toString());</span>
+<span class="nc" id="L84">			System.out.println(&quot;You lost!&quot;);</span>
+		}
+
+<span class="nc" id="L87">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <body>
+
+        <ui:composition template="./../../../WEB-INF/template.xhtml">
+
+            <ui:define name="MisterULE">
+                MisterULE
+            </ui:define>
+
+            <ui:define name="left">
+                <div class="barraMenu">
+                    <h:form>
+                        <p:linkButton outcome="paginaPrincipal.xhtml" value="Inicio" style="background-color: #1E2E52; border: solid 0px; border-radius: 0px; width: 100%; text-align: left;"/>                  
+                        <p:linkButton outcome="plantilla.xhtml" value="Plantilla" style="background-color: #1E2E52;border: solid 0px; border-radius: 0px;  width: 100%; text-align: left;"/>                   
+                        <p:linkButton outcome="liga.xhtml" value="Liga" style="background-color: #1E2E52;border: solid 0px; border-radius: 0px;  width: 100%; text-align: left;"/>                    
+                        <p:linkButton outcome="mercado.xhtml" value="Mercado" style="background-color: #1E2E52;border: solid 0px; border-radius: 0px;  width: 100%; text-align: left;"/>
+                        <p:linkButton outcome="miPerfil.xhtml" value="Mi perfil" style="background-color: #1E2E52;border: solid 0px; border-radius: 0px;  width: 100%; text-align: left;"/>
+                    </h:form>
+                </div>
+            </ui:define>
+
+            <ui:define name="content">
+                <h:form>
+                    <p:growl id="growl11" showDetail="true"/>
+
+                    <h:graphicImage name="campoFutbol.jpg" library="imagenes" class="imagenes" style=" position: absolute; width: 75%; right: 12.5%; left: 15%; top:15%; height: 80%; border: solid 3px white;"/>
+
+                    <p:card id="portero" style="width: 8%; height: 8% ;position: absolute; top:52% ;left:20%; font-size: medium; text-align: center; line-height: 0; font-weight: bold" >
+                        #{listaJugadores.miPlantilla.get(0).nombreJugador.nombre}
+                    </p:card>
+
+                    <p:card id="dfci" style="width: 8%; height: 8% ;position: absolute; top:40% ;left:30%; font-size: medium; text-align: center; line-height: 0; font-weight: bold">
+                        #{listaJugadores.miPlantilla.get(1).nombreJugador.nombre}
+
+                    </p:card>
+
+                    <p:card id="dfcd" style="width: 8%; height: 8% ;position: absolute; top:64% ;left:30%; font-size: medium; text-align: center; line-height: 0; font-weight: bold" >
+                        #{listaJugadores.miPlantilla.get(2).nombreJugador.nombre}
+
+                    </p:card>
+
+                    <p:card id="ld" style="width: 8%; height: 8% ;position: absolute; top:80% ;left:36%; font-size: medium; text-align: center; line-height: 0; font-weight: bold" >
+                        #{listaJugadores.miPlantilla.get(3).nombreJugador.nombre}
+
+                    </p:card>
+
+                    <p:card id="li" style="width: 8%; height: 8% ;position: absolute; top:24% ;left:36%; font-size: medium; text-align: center; line-height: 0; font-weight: bold" >
+                        #{listaJugadores.miPlantilla.get(4).nombreJugador.nombre}
+
+                    </p:card>
+
+                    <p:card id="mcd" style="width: 8%; height: 8% ;position: absolute; top:52% ;left:43%; font-size: medium; text-align: center; line-height: 0; font-weight: bold" >
+                        #{listaJugadores.miPlantilla.get(5).nombreJugador.nombre}
+                    </p:card>
+
+                    <p:card id="mvd" style="width: 8%; height: 8% ;position: absolute; top:69% ;left:52%; font-size: medium; text-align: center; line-height: 0; font-weight: bold" >
+                        #{listaJugadores.miPlantilla.get(6).nombreJugador.nombre}
+
+                    </p:card>
+
+                    <p:card id="mvi" style="width: 8%; height: 8% ;position: absolute; top:35% ;left:52%; font-size: medium; text-align: center; line-height: 0; font-weight: bold" >
+                        #{listaJugadores.miPlantilla.get(7).nombreJugador.nombre}
+
+                    </p:card>
+
+                    <p:card id="ed" style="width: 8%; height: 8% ;position: absolute; top:80% ;left:65%; font-size: medium; text-align: center; line-height: 0; font-weight: bold" >
+                        #{listaJugadores.miPlantilla.get(8).nombreJugador.nombre}
+                    </p:card>
+
+                    <p:card id="ei" style="width: 8%; height: 8% ;position: absolute; top:24% ;left:65%; font-size: medium; text-align: center; line-height: 0; font-weight: bold" >
+                        #{listaJugadores.miPlantilla.get(9).nombreJugador.nombre}
+
+                    </p:card>
+
+                    <p:card id="dc" style="width: 8%; height: 8% ;position: absolute; top:52% ;left:70%; font-size: medium; text-align: center; line-height: 0; font-weight: bold" >
+                        #{listaJugadores.miPlantilla.get(10).nombreJugador.nombre}
+                    </p:card>
+
+
+                    <p:dataTable var="jugador" value="#{listaJugadores.miPlantilla}" style=" position: absolute; width: 75%; right: 12.5%; left: 15%; top:115%; padding-bottom: 3%">
+                        <p:column field="nombreJugador.nombre" headerText="Jugador" filterable="false" style="text-align: center"/>
+
+                        <p:column field="nombreJugador.posicion" headerText="Posición" filterable="false" style="text-align: center"/>
+
+                        <p:column field="nombreJugador.puntuacionTotal" headerText="Puntuación" filterable="false" style="text-align: center"/> 
+
+                        <p:column headerText="Vender" filterable="false" sortable="false" style="text-align: center">
+                            <p:commandButton icon="pi pi-check" styleClass="rounded-button ui-button-flat" action="#{listaJugadores.ponerVenta(jugador)}" update="@form">
+                                <p:confirm header="¿Desea vender este jugador?" message="#{jugador.nombreJugador.nombre} por #{jugador.nombreJugador.valor} " icon="pi pi-info-circle"/>
+                            </p:commandButton>
+
+                            <p:confirmDialog global="true"  responsive="true" width="350">
+                                <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no ui-button-flat"/>
+                                <p:commandButton value="Yes" type="button" action="#{listaJugadores.ponerVenta(product)}" styleClass="ui-confirmdialog-yes" update="@form"/>
+                            </p:confirmDialog>
+
+                            <p:commandButton icon="pi pi-times" styleClass="rounded-button ui-button-danger ui-button-flat"  action="#{listaJugadores.quitarVenta(jugador)}" update="@form">
+                                <p:confirm header="¿Desea quitar de vender este jugador?" message="#{jugador.nombreJugador.nombre} por #{jugador.nombreJugador.valor} " icon="pi pi-info-circle"/>
+                            </p:commandButton>
+
+                            <p:confirmDialog global="true"  responsive="true" width="350">
+                                <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no ui-button-flat"/>
+                                <p:commandButton value="Yes" type="button" action="#{listaJugadores.quitarVenta(jugador)}" styleClass="ui-confirmdialog-yes" update="@form"/>
+                            </p:confirmDialog>
+                        </p:column>
+
+                        <p:column field="enVenta" headerText="En venta" sortable="false" filterable="false" style="text-align: center"/>
+                    </p:dataTable>
+
+                    <p:panelGrid columns="5" styleClass="ui-noborder" style=" position: absolute; width: 75%; right: 12.5%; left: 15%; top:100%; bottom: 10%; ">
+                        <p:outputLabel value="Cambiar jugador de posicion: "/>
+                        <p:inputText placeholder="Nombre jugador" value="#{listaJugadores.reemplazo.nombre}"/>
+                        <p:outputLabel value="Nueva posición:"/>
+                        <h:selectOneMenu id="Posicion" value="#{listaJugadores.selector}" required="true" label="Text 3">
+                            <f:selectItem itemLabel="Posicion" itemValue="" noSelectionOption="false"/>
+                            <f:selectItem itemLabel="POR" itemValue="0"/>
+                            <f:selectItem itemLabel="LD" itemValue="3"/>
+                            <f:selectItem itemLabel="DFCD" itemValue="2"/>
+                            <f:selectItem itemLabel="DFCI" itemValue="1"/>
+                            <f:selectItem itemLabel="LI" itemValue="4"/>
+                            <f:selectItem itemLabel="MCD" itemValue="5"/>
+                            <f:selectItem itemLabel="MVD" itemValue="6"/>
+                            <f:selectItem itemLabel="MVI" itemValue="7"/>
+                            <f:selectItem itemLabel="ED" itemValue="8"/>
+                            <f:selectItem itemLabel="DC" itemValue="10"/>
+                            <f:selectItem itemLabel="EI" itemValue="9"/>
+                        </h:selectOneMenu>
+                        <p:commandButton value="Aceptar" action="#{listaJugadores.cambioPosicion()}" update="@form"/>
+                    </p:panelGrid>
+
+                </h:form>
+
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

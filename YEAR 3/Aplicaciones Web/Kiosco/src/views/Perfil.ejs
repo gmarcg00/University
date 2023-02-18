@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include ('partials/heads.html') %>
+    <link rel="STYLESHEET" type="text/css" href="/css/Kiosco.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav" id="navbar-Inicio">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Kiosco-Inicio"><i class="fas fa-home"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/Contacto-Inicio"><i class="fas fa-envelope"></i>Contacto</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto" id="navbar-Registrarse">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-user-alt"></i> <%= datos[0].nombreUsuario %> </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="container">
+        <div class="row row-cols-2">
+            <div class="col">
+                <div class="card" style="width: 35rem; margin-top: 40px;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center; color: rgb(0, 38, 255); height: 10px;">Datos de usuario</h5>
+                      
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Nombre: <%= datos[0].Nombre %>.</li>
+                      <li class="list-group-item">Apellidos: <%= datos[0].Apellidos %>.</li>
+                      <li class="list-group-item">Edad: 22</li>
+                      <li class="list-group-item">Nombre de usuario: <%= datos[0].nombreUsuario %>.</li>
+                      <li class="list-group-item">Correo electrónico: sdsdsd</li>
+                      <li class="list-group-item">Puntos: <%= datos[0].Puntos %></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 35rem">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">Mis colecciones</h5>
+                      <h6>Nombre: <%= datos[0].Nombre %>.</h6>
+                      <h7>Apellidos: Marcos García.</h7>
+                      <h8>Nombre de usuario: William02eras.</h8>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="/ColeccionPokemon" class="card-link">Mis cromos</a>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 35rem; margin-top: 40px;">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center; color: rgb(0, 38, 255); height: 10px;">Ganar puntos</h5>
+                      
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a href="/Pasatiempo" style="color: black;">Resolver pasatiempo</a></li>
+                      <li class="list-group-item"><a href="/ColeccionPokemon" style="color: black;">Resolver Kaptcha</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 35rem; margin-top: 40px">
+                    <div class="card-body">
+                      <h5 class="card-title" style="text-align: center;">Mis cromos</h5>
+                      <h6>Nombre: Guillermo.</h6>
+                      <h7>Apellidos: Marcos García.</h7>
+                      <h8>Nombre de usuario: William02eras.</h8>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">A second item</li>
+                      <li class="list-group-item">A third item</li>
+                    </ul>
+                    <div class="card-body">
+                      <a href="/ColeccionPokemon" class="card-link">Ver colección</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        
+    </div>
+
+    <!--<div class="container">
+        <table style="border-spacing: 10cm;">
+            <tr>
+                <td>
+                    <div class="card" style="width: 35rem">
+                        <div class="card-body">
+                          <h5 class="card-title" style="text-align: center;">Datos de usuario</h5>
+                          <h6>Nombre: Guillermo.</h6>
+                          <h7>Apellidos: Marcos García.</h7>
+                          <h8>Nombre de usuario: William02eras.</h8>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">An item</li>
+                          <li class="list-group-item">A second item</li>
+                          <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="/ColeccionPokemon" class="card-link">Ver colección</a>
+                        </div>
+                      </div>
+                </td>
+                <td>
+                    <div class="card" style="width: 35rem">
+                        <div class="card-body">
+                          <h5 class="card-title" style="text-align: center;">Datos de usuario</h5>
+                          <h6>Nombre: Guillermo.</h6>
+                          <h7>Apellidos: Marcos García.</h7>
+                          <h8>Nombre de usuario: William02eras.</h8>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">An item</li>
+                          <li class="list-group-item">A second item</li>
+                          <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="/ColeccionPokemon" class="card-link">Ver colección</a>
+                        </div>
+                      </div>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <div class="card" style="width: 35rem">
+                        <div class="card-body">
+                          <h5 class="card-title" style="text-align: center;">Datos de usuario</h5>
+                          <h6>Nombre: Guillermo.</h6>
+                          <h7>Apellidos: Marcos García.</h7>
+                          <h8>Nombre de usuario: William02eras.</h8>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">An item</li>
+                          <li class="list-group-item">A second item</li>
+                          <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="/ColeccionPokemon" class="card-link">Ver colección</a>
+                        </div>
+                      </div>
+                </td>
+                <td>
+                    <div class="card" style="width: 35rem">
+                        <div class="card-body">
+                          <h5 class="card-title" style="text-align: center;">Datos de usuario</h5>
+                          <h6>Nombre: Guillermo.</h6>
+                          <h7>Apellidos: Marcos García.</h7>
+                          <h8>Nombre de usuario: William02eras.</h8>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">An item</li>
+                          <li class="list-group-item">A second item</li>
+                          <li class="list-group-item">A third item</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="/ColeccionPokemon" class="card-link">Ver colección</a>
+                        </div>
+                      </div>
+                </td>
+
+            </tr>
+
+        </table>-->
+    </div>
+   
+
+
+
+
+
+    <%- include ('partials/footer.html') %>
+</body>
+</html>

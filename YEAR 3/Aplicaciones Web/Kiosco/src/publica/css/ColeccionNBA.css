@@ -1,0 +1,17 @@
+body{
+    background-image: url("/images/fondoNBA.jpg");
+    background-size: cover;
+    font-family: 'Spicy Rice', cursive;
+}
+
+.container{
+    margin-top: 15px;
+    display:flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+.row{
+    text-align: center;
+    align-items: center;
+}

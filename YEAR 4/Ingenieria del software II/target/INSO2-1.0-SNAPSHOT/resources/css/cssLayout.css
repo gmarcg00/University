@@ -1,0 +1,321 @@
+
+#top {
+    position: initial;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin: 0px 0px 0px 0px;
+    font-family:fantasy; 
+    font-size: x-large;
+}
+
+
+#left {
+    float: left;
+    width: min-content;
+    opacity: 100%
+}
+
+#right {
+    float: right;
+    background-color: #ece3a5;
+    padding: 5px;
+    width: 150px;
+}
+
+.center_content {
+    display: flex;
+    justify-content: center;
+}
+
+.left_content {
+    background-color: #dddddd;
+    padding: 5px;
+    margin-left: 170px;
+}
+
+.right_content {
+    background-color: #dddddd;
+    padding: 5px;
+    margin: 0px 170px 0px 170px;
+}
+
+#top a:link, #top a:visited {
+    color: white;
+    font-weight : bold;
+    text-decoration: none;
+}
+
+#top a:link:hover, #top a:visited:hover  {
+    color: black;
+    font-weight : bold;
+    text-decoration : underline;
+    background-color: black;
+}
+
+body{
+    margin: 0px 0px 0px 0px;
+    background-image: url("./imagenes/estadio.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.linkButton{
+    background-color: #000000;
+}
+
+#tablaSuperior{
+    width: 100%;
+}
+
+#encabezado{
+    width: 100%;
+}
+
+.columna{
+    width: 100%;
+}
+
+.imagenes{
+    width: 35px;
+    height:35px
+}
+
+.barraMenu{
+    background-color: #000000;
+    border: solid 1px;
+    border-color: #ffffff;
+    width: 150px;
+    height: auto;
+    text-align: start;
+}
+
+.botonMenu{
+    background-color: #000000;
+    border-color: #000000;
+}
+
+#tablaSuperior{
+    background-color: #D20005
+}
+
+/*Estilo clase registro.xhtml*/
+
+#tablaRegistro{
+    background-color: white;
+    border: solid 1px;
+    border-color: black;
+    width: 400px;
+    height: 650px;
+    margin-top: 100px;
+    border-radius: 5%;
+    margin-bottom: 45px;
+}
+
+
+#Registro{
+    margin-top: 20px;
+    font-size: 40px; 
+    font-family: verdana;
+}
+#panel{
+    margin-top: 50px;
+    text-align: center;
+}
+
+/*Estilo clase index.xhtml*/
+#tablaInicio{
+    background-color: white;
+    border: solid 1px;
+    border-color: black;
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    border-radius: 5%;
+}
+#IniSes{
+    margin-top: 20px;
+    font-size: 40px; 
+    font-family: verdana;
+}
+
+/*Estilo clase ingresoLiga.xhtml*/
+
+#tablaPrincipal{
+    background-color: white;
+    border: solid 1px;
+    border-color: black;
+    width: 60%;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 0%;
+}
+
+.titulo{
+    font-size: 40px;
+}
+
+.input{
+    width:220px;
+    height:50px
+}
+
+#panelPrincipal{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+column{
+    width: 100%;
+    text-align: center;
+}
+
+/*Estilo clase paginaPrincipal.xhtml*/
+#tablaEquipo{
+    background-color: white;
+    border: solid 1px;
+    border-color: black;
+    width: 400px;
+    height: 280px;
+    margin-top: 100px;
+    margin-left: 0%;
+}
+
+/*Estilo clase paginaPrincipal.xhtml*/
+
+#gridPagPrincipal{
+    width: 1200px;
+    height: 600px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border: solid #ffffff 1px;
+    background-color: #1E2E52;
+}
+
+#sectorNoticias{
+    background-color: #062A50;
+    width: 50%;
+    height: 50%;
+    padding: 10px 10px 10px 20px;
+    margin: 10px 10px 10px 10px;
+    vertical-align: top
+}
+
+#sectorCalendario{
+    background-color: #062A50;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#sectorPlantilla{
+    background-color: #062A50;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+#sectorMercado{
+    background-color: #062A50;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.titulosCuadros{
+    font-size: 40px;
+    color: #ffffff;
+    margin: auto;
+    width: 50%;
+    padding: 90px;
+    font-weight: bolder;
+
+}
+
+.subtituloCuadros{
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.textoCuadros{
+    color: #ffffff;
+}
+
+#imagenNoticias{
+    padding-left: 130px;
+    padding-top: 30px;
+}
+
+.tablaMercadoInicio{
+    padding: 10px 10px 10px 10px;
+}
+
+/*Estilo clase mercado.xhtml*/
+#panelMercado{
+    width: 800px;
+    height: 800px;
+    margin-bottom: 10px;
+}
+
+#gridMercado{
+    width: 800px;
+    height: 800px;
+    padding-bottom: 10px;
+}
+
+#tablaMercado{
+    background-color: white;
+    border: solid 1px;
+    border-color: black;
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+.titulos{
+    font-size: 40px;
+}
+
+/*Estilo clase miPerfil.xhtml*/
+#tablaPerfil{
+    background-color: white;
+    border: solid 1px;
+    border-color: black;
+    width: 90%;
+    height: 500px;
+    margin-top: 50px;
+}
+
+.subtitulo{
+    font-size: 20px;
+}
+
+.filaSubtitulos{
+        text-align: left;
+
+}
+.facet{
+    position: absolute;
+    top : 0;
+}
+
+
+#tablaLiga{
+    background-color: white;
+    border: solid 1px;
+    border-color: black;
+    width: 90%;
+    height: auto;
+    margin-top: 50px;
+}

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <body>
+
+        <ui:composition template="./../../../WEB-INF/template.xhtml">
+
+            <ui:define name="MisterULE">
+                MisterULE
+            </ui:define>
+
+            <ui:define name="left">
+                <div class="barraMenu">
+                    <h:form>
+                        <p:linkButton outcome="paginaPrincipal.xhtml" value="Inicio" style="background-color: #062A50; border: solid 0px; border-radius: 0px; width: 100%; text-align: left;"/>                  
+                        <p:linkButton outcome="plantilla.xhtml" value="Plantilla" style="background-color: #062A50; border: solid 0px; border-radius: 0px; width: 100%; text-align: left;"/>                   
+                        <p:linkButton outcome="liga.xhtml" value="Liga" style="background-color: #062A50; border: solid 0px; width: 100%; border-radius: 0px; text-align: left;"/>                    
+                        <p:linkButton outcome="mercado.xhtml" value="Mercado" style="background-color: #062A50; border: solid 0px; width: 100%; border-radius: 0px; text-align: left;"/>
+                        <p:linkButton outcome="miPerfil.xhtml" value="Mi perfil" style="background-color: #062A50; border: solid 0px; width: 100%; border-radius: 0px; text-align: left;"/>
+                    </h:form>
+                </div>
+            </ui:define>
+
+            <ui:define name="content">
+                <div id="tablaMenuPrincipal" align="center" >
+                    <p:panelGrid id="gridPagPrincipal">
+                        <p:row>
+                            <p:column id="sectorNoticias">
+                                <h:outputText class="titulosCuadros" value="ÚLTIMAS NOTICIAS"/>                                    
+                                <br/>
+                                <h:outputText class="subtituloCuadros" value="Una Liga incontestable"/>                                    
+                                <br/>
+                                <h:outputText class="textoCuadros" 
+                                              value="LaLiga 35 del Real Madrid llegó en abril, un mes antes de que acabe la temporada y con la mayor diferencia de puntos con el segundo en la historia del campeonato. Los blancos, líderes ... "/>
+                                <p:link href="https://www.marca.com/futbol/real-madrid/campeon-liga.html" value="Ver más" target="blank"/>
+                                <p:graphicImage id="imagenNoticias" name="imgNoticias.jpg" library="imagenes"/>
+                            </p:column>
+                            <p:column id="sectorMercado">
+                                <p:linkButton outcome="mercado.xhtml" value="MERCADO" style="background-color: #062A50; border: solid 0px; width: 100%; text-align: center; font-size: 40px"/>                  
+                                <p:dataTable class="tablaMercadoInicio" var="row" value="#{listaMercado.getProducts(3)}" lazy="false">
+                                    <p:column field="nombreJugador.nombre" headerText="Nombre" filterable="false" sortable="false" />
+                                    <p:column field="nombreJugador.valor" headerText="Valor" filterable="false" sortable="false"/>
+                                    <p:column field="nombreJugador.posicion" headerText="Posicion" filterable="false" sortable="false"/>
+                                    <p:column field="nombreJugador.puntuacionTotal" headerText="Puntuacion" filterable="false"/>
+                                    <p:column field="equipoJuego.nombre" headerText="Equipo" filterable="false" sortable="false" />
+                                </p:dataTable>
+                            </p:column>
+                        </p:row>
+                        <p:row>
+                            <p:column id="sectorPlantilla">
+                                <p:linkButton outcome="plantilla.xhtml" value="PLANTILLA" style="background-color: #062A50; border: solid 0px; width: 100%; text-align: center; font-size: 40px"/>                  
+                            </p:column >
+                            <p:column id="sectorCalendario">
+                                <h:outputText class="titulosCuadros" value="Calendario"/>
+                                <p:dataTable class="tablaMercadoInicio" var="row" value="#{listaPartidos.pedirJornada(1,4)}" lazy="false">
+                                    <p:column field="nombreEquipoLocal.nombre" headerText="Equipo Local" filterable="false" sortable="false"/>
+                                    <p:column field="nombreEquipoVisitante.nombre" headerText="Equipo Visitante" filterable="false" sortable="false"/>
+                                    <p:column field="fecha" headerText="Fecha" filterable="false" sortable="false"/>                                    
+                                </p:dataTable>
+                            </p:column>
+                        </p:row>  
+                    </p:panelGrid>
+                </div>
+            </ui:define>
+        </ui:composition>
+
+    </body>
+</html>

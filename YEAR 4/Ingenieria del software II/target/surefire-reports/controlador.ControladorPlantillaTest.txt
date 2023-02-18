@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: controlador.ControladorPlantillaTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.011 sec <<< FAILURE!
+testQuitarVenta(controlador.ControladorPlantillaTest)  Time elapsed: 0.008 sec  <<< ERROR!
+java.lang.NullPointerException
+	at controlador.ControladorPlantilla.quitarVenta(ControladorPlantilla.java:78)
+	at controlador.ControladorPlantillaTest.testQuitarVenta(ControladorPlantillaTest.java:56)
+
+testPonerVenta(controlador.ControladorPlantillaTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at controlador.ControladorPlantilla.actualizarSQL(ControladorPlantilla.java:83)
+	at controlador.ControladorPlantilla.ponerVenta(ControladorPlantilla.java:74)
+	at controlador.ControladorPlantillaTest.testPonerVenta(ControladorPlantillaTest.java:45)
+

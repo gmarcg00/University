@@ -1,0 +1,57 @@
+
+
+ td {
+    width: 24px;
+    text-align: center;
+ }
+
+ input {
+   width: 16px;
+   text-align: center;
+   text-transform: uppercase;
+}
+
+#boton{
+   width: 90px;
+}
+
+#pistas{
+   width: 90px;
+}
+
+#titulo{
+   text-align: left; 
+   font-family: Arial; 
+   font-size: 40px; 
+   COLOR: #1278BF; 
+   text-shadow: 0px 0px 9px #508AD3;
+}
+
+#cuerpo{
+   background-color: #87F4FA;
+   width: 1024px; 
+   margin-left: 3%; 
+}
+
+#texto2 {
+   float: right;
+   border: ridge #0f0fef 1px;
+}
+
+#texto1 {
+   float: right;
+   margin-right: 30%; 
+}
+
+#div-cookies {
+   position: fixed;
+   bottom: 0px;
+   left: 0px;
+   width: 100%;
+   background-color: white;
+   box-shadow: 0px -5px 15px gray;
+   padding: 7px;
+   text-align: center;
+   z-index: 99;
+ }
+

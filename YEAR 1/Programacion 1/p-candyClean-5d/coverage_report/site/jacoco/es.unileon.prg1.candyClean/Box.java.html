@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Box.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Coverage with Jacoco</a> &gt; <a href="index.source.html" class="el_package">es.unileon.prg1.candyClean</a> &gt; <span class="el_source">Box.java</span></div><h1>Box.java</h1><pre class="source lang-java linenums">package es.unileon.prg1.candyClean;
+
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
+
+/**
+ * 
+ * Esta clase representa las casillas del juego
+ * @version 1.0
+ * @author Juan Alvaro
+ * 
+ *
+ */
+public class Box {
+	
+	//Declaracion del logger
+<span class="fc" id="L18">	private static final Logger logger=LogManager.getLogger(Box.class);</span>
+
+	private Color color;
+	/**
+	 * 
+	 * @param aleatorio
+	 */
+<span class="fc" id="L25">	public Box(BackgroundColor aleatorio) {</span>
+<span class="fc" id="L26">		logger.info(&quot;Crea un nuevo Color&quot;);</span>
+
+<span class="fc" id="L28">		this.color = new Color(aleatorio);</span>
+		
+
+<span class="fc" id="L31">	}</span>
+	/**
+	 * Marca el color de la casilla
+	 * @param color
+	 */
+	public void setColor(Color color) {
+<span class="fc" id="L37">		logger.debug(&quot;Establece el color&quot;);</span>
+<span class="fc" id="L38">		this.color = color;</span>
+
+<span class="fc" id="L40">	}</span>
+ 
+	/**
+	 * Este metodo devuelve el color de la casilla
+	 * @return Color
+	 */
+	public Color getColor() {
+<span class="fc" id="L47">		logger.debug(&quot;Devuelve el color&quot;);</span>
+
+<span class="fc" id="L49">		return color;</span>
+		
+
+	}
+
+	/**
+	 * Borra la casilla poniendo el color negro
+	 */
+	public void removeBox() {
+<span class="fc" id="L58">		logger.info(&quot;Establece a negro el color de la casilla&quot;);</span>
+<span class="fc" id="L59">		this.color = new Color(BackgroundColor.BLACK);</span>
+
+<span class="fc" id="L61">	}</span>
+
+	/**
+	 * 
+	 * Este metodo compara el color de las casillas
+	 * @param Box
+	 * @return boolean
+	 */
+	public boolean isSame(Box another) {
+<span class="fc" id="L70">		logger.info(&quot;Comprueba si dos colores son iguales&quot;);</span>
+
+<span class="fc bfc" id="L72" title="All 2 branches covered.">		if (this.color.equals(another.getColor())) {</span>
+<span class="fc" id="L73">			logger.trace(&quot;Entrando en un if&quot;);</span>
+<span class="fc" id="L74">			return true;</span>
+		}else
+<span class="fc" id="L76">			return false;</span>
+	}
+
+	@Override
+	public String toString() {
+<span class="fc" id="L81">		return color.toString();</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

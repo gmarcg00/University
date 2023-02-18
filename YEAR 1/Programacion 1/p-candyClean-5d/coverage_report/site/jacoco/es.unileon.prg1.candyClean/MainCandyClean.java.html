@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MainCandyClean.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Coverage with Jacoco</a> &gt; <a href="index.source.html" class="el_package">es.unileon.prg1.candyClean</a> &gt; <span class="el_source">MainCandyClean.java</span></div><h1>MainCandyClean.java</h1><pre class="source lang-java linenums">package es.unileon.prg1.candyClean;
+
+/**
+ * @version 1.0
+ * @author Guillermo Marcos Garcia
+ *
+ */
+
+<span class="nc" id="L9">public class MainCandyClean {</span>
+	public static void main(String args[]) {
+		int size, numColors;
+		CandyClean candyclean;
+<span class="nc bnc" id="L13" title="All 2 branches missed.">		if (args.length != 2) {// Si el numero de argumentos es incorrecto</span>
+<span class="nc" id="L14">			System.out.println(&quot;Sintaxis del programa:\n&quot; + &quot;MainCandyClean dimension numColors&quot;);</span>
+		} else {// Si el numero de argumentos es correcto
+			try {
+<span class="nc" id="L17">				size = Integer.parseInt(args[0]);</span>
+<span class="nc" id="L18">				numColors = Integer.parseInt(args[1]); </span>
+<span class="nc" id="L19">				candyclean = new CandyClean(size, numColors);</span>
+<span class="nc" id="L20">				TextUI textUI = new TextUI(candyclean);</span>
+<span class="nc" id="L21">				textUI.start();</span>
+
+<span class="nc" id="L23">			} catch (Exception e) {</span>
+<span class="nc" id="L24">				System.out.println(e.getMessage());</span>
+<span class="nc" id="L25">			}</span>
+		}
+<span class="nc" id="L27">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

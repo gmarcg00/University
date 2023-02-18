@@ -1,0 +1,6 @@
+Ejercicio 0, Sale un mensaje de que no se puede conectar con el servidor y es debido a que este no ha sido iniciado (Ejercicio 0)
+Ejercicio 1, Al volver a introducir la direccion del servidor en el navegador, accedo a la página de pruebas de apache
+		No se puede acceder a la página, tiempo de espera agotado
+Ejercicio 5, Con el comando chmod 333 ni el propietario, ni el grupo ni nadie puede leer el archivo, en este caso si que accedemos a index.html
+		ya que es la segunda pagina de inicio establecida después de inicio2.html
+
