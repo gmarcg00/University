@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <mpi.h>
+
+
+int main(int argc, char* argv[]){
+	
+	int rank,size,newGroup;
+	MPI_Comm new_comm;
+	
+	MPI_Init(&argc, &argv);
+	MPI_Comm_size(MPI_COMM_WORLD,&size);
+	MPI_Comm_rank(MPI_COMM_WORLD,&rank);
+	
+	newGroup=rank%3;
+
+	MPI_Comm_split(MPI_COMM_WORLD,newGroup,rank,&new_comm);
+	
+	MPI_Comm_size(new_comm,&size);
+	MPI_Comm_rank(new_comm,&rank);
+	
+	printf("Soy el proceso %d y en mi grupo hay %d procesos \n",rank,size);
+	
+
+	MPI_Finalize();
+	return 0;
+
+}
